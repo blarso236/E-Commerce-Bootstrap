@@ -17,6 +17,7 @@
     <div class="container">
         <!-- Content here -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <h1 class="Title">Cybernation</h1>
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,10 +26,10 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#" onclick="window.location.href='bootstrap.html'">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#" onclick="window.location.href='features.html'">Features</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
@@ -64,71 +65,12 @@
           </div>
       </div><br><br>
 
-      <button class="accordion">About</button>
-      <div class="panel">
-        <h1 id="Description">About this</h1><br>
-        Cybernation is a store in which you can (and will) upgrade <br>
-        your own body. Whether you want to get a new arm, a <br>
-        better eye (that isn't fragile), or even get an implant <br>
-        injected into your own bloodstream with your own custom <br>
-        upgrades, you can find anything your body desires. The <br>
-        future is not far from here, and it's time for the <br>
-        Cybernation to rise.
-        <img src="cyborg.jpg" class="ex"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </div>
-
-      <button class="accordion">Shipping details</button>
-      <div class="panel">
-        <h1 id="Money">Shipping Policies</h1><br>
-        Creating this next level tech is expensive, but to ship all of <br>
-        this, we here at Cybernation have to go through with <br>
-        picking the right size box and making sure it is in perfect <br>
-        working condition so that this equipment doesn't <br>
-        get damaged along the way. To keep everything in perfect <br>
-        condition, our Shipping fees are a bit higher than average <br>
-        at 12%.
-        <img src="Truck.jpg" class="truck"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </div>
-
-      <button class="accordion">Return Warning</button>
-      <div class="panel">
-        <h1 id="important">WARNING!</h1>
-        • Returning our products is not possible. <br>
-        • If you don't like the cybernetic arm, it's not like we can just reattach your arm. <br>
-        • Cybernetic enhancements to your eye from us can be reversed, but only if you are willing to endure surgery. <br>
-        • Taking out nanomachines is a lot harder than you'd think, and can only be removed within the first 2 weeks after purchase. <br>
-      </div>
-
-      <button class="accordion">FAQ</button>
-      <div class="panel">
-        <h1 id="FAQ">Frequently Asked Questions</h1>
-        • Q: So how are you supposed to move the arm now?<br>
-        • A: You will have to use your mind to control your arm.<br>
-          Doing so will feel weird at first, but once you get the grasp of things, you will not regret <strike>becoming another test subject</strike> your purchase!<br>
-        • Q: Why does my arm never stop moving? It's getting annoying when I have to go to sleep.<br>
-        • A: This is because you're indirectly telling it what to do. Try to think of things you can<br>
-          do without it.<br>
-        • Q: These Nanomachines are really painful! What can I do to make the process more tolerable?<br>
-        • A: The most common way to make the pain go away is to take some painkillers. The first 24 hours<br>
-        Always hurt, however if you continue to feel pain after that, come to your nearest Cybernation. Hospitals can't even come close to seeing what's wrong.<br>  
-      </div>
-
-      <button class="accordion">Subscribe</button>
-      <div class="panel">
-        <h1 id="form">Subscribe now</h1>
-        <form action="/action_page.php">
-          <label for="email">Enter your email:</label><br>
-          <input type="email" id="email" name="email"><br>
-          <label for="pwd">Password:</label><br>
-          <input type="password" id="pwd" name="pwd"><br><br>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
+      
       <div class="products">
         <h1 id="Upgrades">Available Items</h1><br><br>
       </div>
 
-      <img id="Product" src="eye.jpg" alt="..." onclick="window.location.href='';">
+      <img id="Product" src="eye.jpg" alt="..." onclick="window.location.href='eye.html';">
       <img src="nanomachines.jpg" id="Product" alt="...">
       <img id="Product" src="cyborgarm.jpg" alt="...">
       <br><br><br><br><br>
@@ -136,25 +78,5 @@
       <button class="Click" id="OptB">Purchase (price may vary)</button>
       <button class="Click" id="OptC">Purchase $10000</button>
       <br><br><br><br>
-      <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-         acc[i].addEventListener("click", function() {
-           /* Toggle between adding and removing the "active" class,
-           to highlight the button that controls the panel */
-           this.classList.toggle("active");
-
-           /* Toggle between hiding and showing the active panel */
-           var panel = this.nextElementSibling;
-           if (panel.style.display === "block") {
-           panel.style.display = "none";
-           } else {
-           panel.style.display = "block";
-           }
-         });
-       }
-      </script>
 </body>
 </html>
